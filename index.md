@@ -10,5 +10,5 @@ Currently a Business Insights Analyst at Amica Insurance.
 
 I build data-driven solutions and visualizations to extract actionable insights from complex datasets.
 
-[See My Projects](/projects/)  
+[See My Projects](/projects.md/)  
 [About Me](about.html)
