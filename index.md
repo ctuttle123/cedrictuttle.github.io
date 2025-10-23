@@ -1,6 +1,5 @@
 ---
 layout: home
-title: Cedric Tuttle
 ---
 
 # Hi, I'm Cedric Tuttle
