@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Project 1"
+title: "Customer Churn Prediction"
 permalink: /projects/project1/
+nav_exclude: true   # hides it from top navigation
 ---
 
 ---
