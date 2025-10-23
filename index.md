@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: page
+title: My Portfolio
 ---
 
 # Hi, I'm Cedric Tuttle
