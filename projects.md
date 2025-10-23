@@ -1,19 +1,35 @@
 ---
 layout: page
-title: Customer Churn Prediction
-permalink: /projects/project1/
+title: Projects
+permalink: /projects/
 ---
 
-### Customer Churn Prediction | Python, SQL, Scikit-Learn
+# My Projects
 
-**Problem:** Predict which customers are likely to cancel their insurance policies.  
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
 
-**Dataset:** Simulated insurance customer data (demographics, policy details, claims history).  
+<!-- Project 1 -->
+<div style="width: 200px; text-align: center;">
+  <a href="/projects/project1/">
+    <img src="/assets/images/project1-icon.png" alt="Project 1" style="width:100%; border-radius: 10px;">
+    <h3>Customer Churn Prediction</h3>
+  </a>
+</div>
 
-**Key Findings:**
-- Customers with fewer interactions in the last 6 months are more likely to churn
-- High claim frequency correlates with churn risk
+<!-- Project 2 -->
+<div style="width: 200px; text-align: center;">
+  <a href="/projects/project2/">
+    <img src="/assets/images/project2-icon.png" alt="Project 2" style="width:100%; border-radius: 10px;">
+    <h3>NBA Big Man Analysis</h3>
+  </a>
+</div>
 
-**Skills Used:** Data cleaning, exploratory analysis, regression, classification, visualization
+<!-- Project 3 -->
+<div style="width: 200px; text-align: center;">
+  <a href="/projects/project3/">
+    <img src="/assets/images/project3-icon.png" alt="Project 3" style="width:100%; border-radius: 10px;">
+    <h3>Spotify Trends</h3>
+  </a>
+</div>
 
-[View Code on GitHub](https://github.com/cedrictuttle/cedrictuttle.github.io)
+</div>
