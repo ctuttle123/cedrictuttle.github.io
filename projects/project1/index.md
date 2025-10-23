@@ -1,4 +1,10 @@
 ---
+layout: default
+title: "Project 1"
+permalink: /projects/project1/
+---
+
+---
 layout: page
 title: Customer Churn Prediction
 permalink: /projects/project1/
