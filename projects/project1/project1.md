@@ -5,12 +5,6 @@ permalink: /projects/project1/
 nav_exclude: true   # hides it from top navigation
 ---
 
----
-layout: page
-title: Customer Churn Prediction
-permalink: /projects/project1/
----
-
 ## Customer Churn Prediction | Python, SQL, Scikit-Learn
 
 **Problem:** Predict which customers are likely to cancel their insurance policies.  
