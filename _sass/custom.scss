@@ -1,0 +1,24 @@
+// Align text and control layout width
+body {
+  text-align: left;
+  max-width: 850px;
+  margin: auto;
+  padding: 2rem;
+}
+
+// Add subtle polish to headers
+h1, h2, h3 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #222;
+}
+
+// Style links for consistency
+a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
