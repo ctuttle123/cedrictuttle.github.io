@@ -8,3 +8,5 @@ header_pages:
   - about.md
   - projects.md
 
+sass:
+  style: compressed
