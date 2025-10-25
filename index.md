@@ -1,14 +1,15 @@
 ---
 layout: page
-title: My Portfolio
+title: Home
 ---
 
 # Hi, I'm Cedric Tuttle
 
-Economics & Data Science Senior at Carnegie Mellon University.  
-Currently a Business Insights Analyst at Amica Insurance.  
+🎓 **Economics & Data Science Senior at Carnegie Mellon University**  
+📊 Currently a **Business Insights Analyst at Amica Insurance**  
 
-I build data-driven solutions and visualizations to extract actionable insights from complex datasets.
+I’m passionate about using data to drive strategic decisions, build predictive models, and uncover insights that support innovation.  
 
-[See My Projects](/projects/)  
-[About Me](about.html)
+Explore my work:
+- [**Projects**](projects) – Data science, analytics, and visualization work.
+- [**About**](about) – My background, skills, and interests.
