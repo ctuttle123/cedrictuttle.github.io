@@ -8,7 +8,7 @@ permalink: /about/
 - Franco-American; lived my entire life in France and went to an international school
 - I Love to play sports; Tennis, Golf, Soccer, Basketball
 - I Love finding applications for data analysis in sports
-- 
+
 ### Education
 - Senior at Carnegie Mellon University, majoring in Economics & Data Science
 - Business Intelligence Analyst at Amica Insurance
