@@ -1,3 +1,10 @@
 title: Cedric Tuttle Portfolio
 description: Economics & Data Science Portfolio
 theme: minima
+
+# Only show these pages in the top navigation
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
+
