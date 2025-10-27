@@ -1,0 +1,18 @@
+/* Force left alignment for all Minima containers */
+body,
+html,
+.site,
+.site-header,
+.site-wrapper,
+.site-main,
+.page-content,
+.wrapper,
+.post,
+.post-content,
+.site-footer {
+  display: block !important;
+  text-align: left !important;
+  margin-left: 80px !important;
+  margin-right: auto !important;
+  max-width: 900px !important;
+}
