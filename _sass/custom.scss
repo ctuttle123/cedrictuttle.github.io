@@ -24,6 +24,16 @@ a:hover {
   text-decoration: underline;
 }
 
-.wrapper {
-  max-width: 1000px;
+/* Override theme centering for main layout containers */
+.wrapper,
+.page-content {
+  max-width: 900px !important;
+  margin-left: 80px !important;  /* pushes content toward the left */
+  margin-right: auto !important; /* ensures right side has space */
+  text-align: left !important;
+}
+
+/* Optional: tighten top spacing if needed */
+.page-content {
+  padding-top: 2rem;
 }
