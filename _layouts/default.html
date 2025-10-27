@@ -6,15 +6,25 @@
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    <h1>{{ page.title }}</h1>
+  <!-- Header -->
+  <header class="site-header">
+    <h1><a href="{{ '/' | relative_url }}">Cedric Tuttle Portfolio</a></h1>
+    <nav>
+      <ul>
+        <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+        <li><a href="{{ '/projects.html' | relative_url }}">Projects</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
+  <!-- Main content -->
+  <main class="site-main">
     {{ content }}
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="site-footer">
     <p>© 2025 Cedric Tuttle</p>
   </footer>
 </body>
