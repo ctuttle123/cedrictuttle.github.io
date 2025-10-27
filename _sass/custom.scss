@@ -2,7 +2,8 @@
 body {
   text-align: left;
   max-width: 850px;
-  margin: auto;
+  margin-left: 80px; /* shifts content left */
+  margin-right: auto;
   padding: 2rem;
 }
 
@@ -26,12 +27,3 @@ a:hover {
 .wrapper {
   max-width: 1000px;
 }
-
-body {
-  text-align: left;
-  max-width: 850px;
-  margin-left: 80px; /* shifts content left */
-  margin-right: auto;
-  padding: 2rem;
-}
-
