@@ -1,20 +1,56 @@
-// Align text and control layout width
-body {
-  text-align: left;
-  max-width: 850px;
-  margin-left: 80px;
-  margin-right: auto;
-  padding: 2rem;
+// ----------------------------
+// Base layout and body styling
+// ----------------------------
+body,
+html {
+  display: block !important;       /* prevent flex/grid centering */
+  text-align: left !important;     /* left-align all text */
+  margin-left: 80px !important;    /* push content left */
+  margin-right: auto !important;   /* flexible right margin */
+  max-width: 900px !important;     /* control page width */
+  padding: 2rem;                   /* page padding */
 }
 
-// Add subtle polish to headers
+// ----------------------------
+// Header and navigation
+// ----------------------------
+.site-header,
+.site,
+.site-wrapper,
+.site-main,
+.page-content,
+.wrapper {
+  display: block !important;       /* remove theme centering */
+  text-align: left !important;
+  margin-left: 80px !important;
+  margin-right: auto !important;
+  max-width: 900px !important;
+}
+
+// ----------------------------
+// Posts and main content
+// ----------------------------
+.post,
+.post-content {
+  display: block !important;
+  text-align: left !important;
+  margin-left: 0 !important;       /* content inside posts aligns with wrapper */
+  margin-right: 0 !important;
+  max-width: 100% !important;
+}
+
+// ----------------------------
+// Headers
+// ----------------------------
 h1, h2, h3 {
   font-weight: 600;
   margin-top: 1.5rem;
   color: #222;
 }
 
-// Style links for consistency
+// ----------------------------
+// Links
+// ----------------------------
 a {
   color: #0056b3;
   text-decoration: none;
@@ -24,14 +60,15 @@ a:hover {
   text-decoration: underline;
 }
 
-// Force left-alignment for all main containers
-.site-wrapper,
-.site-main,
-.content,
-.wrapper {
+// ----------------------------
+// Footer
+// ----------------------------
+.site-footer,
+.footer-col-wrapper,
+.footer-col {
   display: block !important;
-  max-width: 900px !important;
-  margin-left: 80px !important;
-  margin-right: auto !important;
   text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  max-width: 100% !important;
 }
