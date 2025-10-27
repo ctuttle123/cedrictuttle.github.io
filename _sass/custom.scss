@@ -1,58 +1,33 @@
-// ----------------------------
-// Base layout and body styling
-// ----------------------------
+/* --- General page layout --- */
 body,
 html {
-  display: block !important;       /* prevent flex/grid centering */
-  text-align: left !important;     /* left-align all text */
-  margin-left: 80px !important;    /* push content left */
-  margin-right: auto !important;   /* flexible right margin */
-  max-width: 900px !important;     /* control page width */
-  padding: 2rem;                   /* page padding */
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #fff;
+  color: #111;
 }
 
-// ----------------------------
-// Header and navigation
-// ----------------------------
-.site-header,
-.site,
-.site-wrapper,
-.site-main,
+/* --- Main content area --- */
 .page-content,
-.wrapper {
-  display: block !important;       /* remove theme centering */
+.post,
+.post-content {
+  display: block !important;
   text-align: left !important;
   margin-left: 80px !important;
   margin-right: auto !important;
   max-width: 900px !important;
 }
 
-// ----------------------------
-// Posts and main content
-// ----------------------------
-.post,
-.post-content {
-  display: block !important;
-  text-align: left !important;
-  margin-left: 0 !important;       /* content inside posts aligns with wrapper */
-  margin-right: 0 !important;
-  max-width: 100% !important;
+/* --- Headers and titles --- */
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+  margin-left: 0;
 }
 
-// ----------------------------
-// Headers
-// ----------------------------
-h1, h2, h3 {
-  font-weight: 600;
-  margin-top: 1.5rem;
-  color: #222;
-}
-
-// ----------------------------
-// Links
-// ----------------------------
+/* --- Links --- */
 a {
-  color: #0056b3;
+  color: #0066cc;
   text-decoration: none;
 }
 
@@ -60,15 +35,22 @@ a:hover {
   text-decoration: underline;
 }
 
-// ----------------------------
-// Footer
-// ----------------------------
-.site-footer,
-.footer-col-wrapper,
-.footer-col {
-  display: block !important;
-  text-align: left !important;
-  margin-left: 0 !important;
-  margin-right: auto !important;
-  max-width: 100% !important;
+/* --- Footer --- */
+.site-footer {
+  text-align: left;
+  margin-left: 80px;
+  margin-right: auto;
+  max-width: 900px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid #ddd;
+  color: #555;
+}
+
+/* --- Keep header and navigation intact --- */
+.site-header,
+.site-wrapper,
+.site-main {
+  display: default; /* Keep Minima layout */
+  text-align: default;
 }
