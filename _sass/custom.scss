@@ -26,10 +26,13 @@ a:hover {
 
 /* Override Minima centering */
 .site-wrapper,
+/* Force left-alignment for all main containers */
+.site-wrapper,
 .site-main,
 .content {
-  max-width: 900px !important;
-  margin-left: 80px !important;
-  margin-right: auto !important;
-  text-align: left !important;
+  display: block !important;       /* prevent flex centering */
+  max-width: 900px !important;     /* set your desired width */
+  margin-left: 80px !important;    /* push left */
+  margin-right: auto !important;   /* keep right margin flexible */
+  text-align: left !important;     /* align text */
 }
