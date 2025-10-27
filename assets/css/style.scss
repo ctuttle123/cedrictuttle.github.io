@@ -1,6 +1,7 @@
 ---
-# Front matter ensures Jekyll processes this SCSS file
+# Front matter
 ---
 
-@import "minima";   // import the Minima theme’s default styles
-@import "custom";   // import your overrides from _sass/custom.scss
+@import "minima";
+@import "custom_override";  // the new override file
+
