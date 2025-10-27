@@ -11,7 +11,7 @@ body, html {
 .site-header {
   display: flex;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem; /* smaller padding */
   background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
 }
@@ -19,13 +19,14 @@ body, html {
 .logo-menu {
   display: flex;
   align-items: center;
+  gap: 0.5rem; /* small gap between logo and hamburger */
 }
 
 .logo-menu h1 a {
   text-decoration: none;
   color: #111;
   font-size: 1.5rem;
-  margin-right: 2rem;
+  margin: 0; /* remove margin */
 }
 
 /* Hamburger + nav container */
@@ -39,6 +40,7 @@ body, html {
   background: none;
   border: none;
   cursor: pointer;
+  margin: 0; /* flush left */
 }
 
 /* Drop-down nav */
@@ -86,7 +88,7 @@ body, html {
 .site-footer {
   text-align: left;
   margin: 2rem auto;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   max-width: 900px;
   border-top: 1px solid #ddd;
   color: #555;
@@ -96,10 +98,7 @@ body, html {
 /* --- Responsive adjustments --- */
 @media (max-width: 768px) {
   #nav-menu ul {
-    width: 150px; /* adjust as needed */
+    width: 150px; /* adjust if needed */
   }
 }
-
-
-
 
