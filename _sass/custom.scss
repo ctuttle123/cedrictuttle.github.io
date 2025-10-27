@@ -24,16 +24,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Override theme centering for main layout containers */
-.wrapper,
-.page-content {
+/* Override Minima centering */
+.site-wrapper,
+.site-main,
+.content {
   max-width: 900px !important;
-  margin-left: 80px !important;  /* pushes content toward the left */
-  margin-right: auto !important; /* ensures right side has space */
+  margin-left: 80px !important;
+  margin-right: auto !important;
   text-align: left !important;
-}
-
-/* Optional: tighten top spacing if needed */
-.page-content {
-  padding-top: 2rem;
 }
