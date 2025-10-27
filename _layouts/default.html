@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
-    <h1><a href="{{ '/' | relative_url }}">Cedric Tuttle Portfolio</a></h1>
-    <nav>
+    <h1><a href="{{ '/' | relative_url }}">Cedric Tuttle</a></h1>
+
+    <!-- Hamburger button -->
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <!-- Navigation menu -->
+    <nav id="nav-menu">
       <ul>
         <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
         <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
@@ -27,5 +33,13 @@
   <footer class="site-footer">
     <p>© 2025 Cedric Tuttle</p>
   </footer>
+
+  <!-- Hamburger toggle script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector("#nav-menu ul");
+      menu.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
