@@ -1,4 +1,4 @@
-/* --- General page layout --- */
+/* --- General layout --- */
 body, html {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body, html {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* logo left, hamburger right */
   padding: 1rem 2rem;
   background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
@@ -75,23 +75,30 @@ body, html {
 
 /* --- Responsive behavior --- */
 @media (max-width: 768px) {
+  /* Hide menu by default */
   #nav-menu ul {
     display: none;
     flex-direction: column;
     margin-top: 0.5rem;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    padding: 0.5rem 0;
   }
 
+  /* Show menu when toggled */
   #nav-menu ul.show {
     display: flex;
   }
 
-  .hamburger {
-    display: block;
+  #nav-menu ul li {
+    margin: 0.5rem 0;
+    text-align: right; /* right-align menu items */
+    margin-right: 2rem;
   }
 
-  #nav-menu ul li {
-    margin-left: 0;
-    margin-top: 0.5rem;
+  .hamburger {
+    display: block;
   }
 }
 
