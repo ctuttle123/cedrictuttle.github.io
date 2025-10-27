@@ -1,4 +1,4 @@
-/* --- General layout --- */
+/* --- General page layout --- */
 body, html {
   margin: 0;
   padding: 0;
@@ -15,6 +15,7 @@ body, html {
   padding: 1rem 2rem;
   background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
+  position: relative;
 }
 
 .site-header h1 a {
@@ -25,14 +26,24 @@ body, html {
 
 /* --- Navigation menu --- */
 #nav-menu ul {
-  display: flex;
+  display: none; /* hidden until toggled */
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
+}
+
+#nav-menu ul.show {
+  display: flex;
 }
 
 #nav-menu ul li {
-  margin-left: 1.5rem;
+  margin: 0.5rem 0;
+  text-align: right;
 }
 
 #nav-menu ul li a {
@@ -47,7 +58,7 @@ body, html {
 
 /* --- Hamburger button --- */
 .hamburger {
-  display: none;
+  display: block;
   font-size: 2rem;
   background: none;
   border: none;
@@ -73,32 +84,14 @@ body, html {
   font-size: 0.9rem;
 }
 
-/* --- Responsive behavior --- */
+/* --- Optional: Responsive adjustments --- */
 @media (max-width: 768px) {
-  /* Hide menu by default */
   #nav-menu ul {
-    display: none;
-    flex-direction: column;
-    margin-top: 0.5rem;
     width: 100%;
-    background-color: #f8f8f8;
-    border-top: 1px solid #ddd;
-    padding: 0.5rem 0;
-  }
-
-  /* Show menu when toggled */
-  #nav-menu ul.show {
-    display: flex;
-  }
-
-  #nav-menu ul li {
-    margin: 0.5rem 0;
-    text-align: right; /* right-align menu items */
-    margin-right: 2rem;
-  }
-
-  .hamburger {
-    display: block;
+    right: 0;
+    top: 100%;
   }
 }
+
+
 
