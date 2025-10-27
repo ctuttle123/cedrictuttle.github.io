@@ -11,22 +11,17 @@ body, html {
 .site-header {
   display: flex;
   align-items: center;
-  padding: 1rem 1rem; /* smaller padding */
+  justify-content: flex-start; /* everything hugs left */
+  padding: 1rem 1rem;
   background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
+  gap: 1rem; /* space between logo and hamburger */
 }
 
-.logo-menu {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; /* small gap between logo and hamburger */
-}
-
-.logo-menu h1 a {
-  text-decoration: none;
-  color: #111;
+.logo a {
   font-size: 1.5rem;
-  margin: 0; /* remove margin */
+  color: #111;
+  text-decoration: none;
 }
 
 /* Hamburger + nav container */
@@ -40,7 +35,7 @@ body, html {
   background: none;
   border: none;
   cursor: pointer;
-  margin: 0; /* flush left */
+  margin: 0;
 }
 
 /* Drop-down nav */
@@ -49,7 +44,7 @@ body, html {
   flex-direction: column;
   position: absolute;
   top: 100%;
-  left: 0; /* aligns with hamburger */
+  left: 0; /* flush with hamburger */
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   padding: 0.5rem 1rem;
@@ -101,4 +96,5 @@ body, html {
     width: 150px; /* adjust if needed */
   }
 }
+
 
