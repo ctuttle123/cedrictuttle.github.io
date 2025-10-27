@@ -2,7 +2,7 @@
 body {
   text-align: left;
   max-width: 850px;
-  margin-left: 80px; /* shifts content left */
+  margin-left: 80px;
   margin-right: auto;
   padding: 2rem;
 }
@@ -24,13 +24,14 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Override Minima centering for all main containers */
+// Force left-alignment for all main containers
 .site-wrapper,
 .site-main,
-.content {
-  display: block !important;       /* prevent flex centering */
-  max-width: 900px !important;     /* set your desired width */
-  margin-left: 80px !important;    /* push left */
-  margin-right: auto !important;   /* keep right margin flexible */
-  text-align: left !important;     /* align text */
+.content,
+.wrapper {
+  display: block !important;
+  max-width: 900px !important;
+  margin-left: 80px !important;
+  margin-right: auto !important;
+  text-align: left !important;
 }
