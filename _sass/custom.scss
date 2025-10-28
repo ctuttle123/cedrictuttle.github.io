@@ -1,54 +1,49 @@
-/* --- Reset and structure --- */
-body {
+/* --- General page layout --- */
+body, html {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
-  background-color: #fafafa;
-  color: #222;
+  font-family: system-ui, sans-serif;
+  background-color: #fff;
+  color: #111;
 }
 
-/* Make sure nothing is globally centered */
-.site-main,
-.page-content,
-.wrapper,
-main {
-  max-width: 900px;
-  margin: 0 auto; /* keeps it responsive */
-  text-align: left; /* ensures text aligns left */
-  display: block;
-  padding: 2rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-/* Header layout */
+/* --- Header --- */
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: #f0f0f0;
-  border-bottom: 1px solid #ccc;
+  position: relative;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+  height: 3.5rem;
 }
 
-/* Hamburger button */
 .hamburger {
-  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
+  margin: 0;
+  padding: 0.5rem;
+  z-index: 20;
 }
 
-/* Navigation menu hidden by default on mobile */
 #nav-menu ul {
   display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  z-index: 10;
 }
 
 #nav-menu ul.show {
-  display: block;
+  display: flex;
 }
 
 #nav-menu ul li {
@@ -57,85 +52,88 @@ main {
 
 #nav-menu ul li a {
   text-decoration: none;
-  color: #222;
+  color: #111;
   font-weight: 500;
 }
 
-/* Footer */
+#nav-menu ul li a:hover {
+  color: #007acc;
+}
+
+/* --- Main content --- */
+.site-main {
+  margin: 2rem 2rem;
+  max-width: 900px;
+  text-align: left;
+}
+
+/* --- Footer --- */
 .site-footer {
-  text-align: center;
-  padding: 2rem 0;
+  text-align: left;
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+  max-width: 900px;
+  border-top: 1px solid #ddd;
+  color: #555;
   font-size: 0.9rem;
-  color: #666;
 }
 
-/* Desktop navigation (always visible) */
-@media (min-width: 768px) {
-  #nav-menu ul {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  #nav-menu ul.show {
-    display: flex;
-  }
-}
-
-/* --- About Page Layout --- */
-.about-container {
+/* --- About Me Page Layout (page-specific) --- */
+.about-page .about-container {
   display: flex;
-  align-items: flex-start; /* align tops of text & avatar */
+  align-items: flex-start;
   justify-content: space-between;
   gap: 3rem;
-  padding: 2rem;
+  padding: 2rem 0;
   max-width: 1200px;
-  margin: 0 auto; /* center the whole about section */
+  margin: 0 auto;
 }
 
-.about-text {
-  flex: 2; /* wider column */
+.about-page .about-text {
+  flex: 2;
   min-width: 300px;
 }
 
-.about-avatar {
+.about-page .about-avatar {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.avatar {
+.about-page .avatar {
   width: 250px;
   height: auto;
   border-radius: 50%;
   animation: wave 2.5s ease-in-out infinite;
 }
 
-/* Simple wave animation */
+/* Waving animation */
 @keyframes wave {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(3deg); }
   75% { transform: rotate(-3deg); }
 }
 
-/* --- Mobile Layout --- */
+/* --- Responsive adjustments --- */
 @media (max-width: 768px) {
-  .about-container {
+  #nav-menu ul {
+    width: 150px;
+  }
+
+  .about-page .about-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .about-avatar {
+  .about-page .about-avatar {
     margin-top: 1.5rem;
   }
 
-  .avatar {
+  .about-page .avatar {
     width: 180px;
   }
 }
+
 
