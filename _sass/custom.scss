@@ -1,51 +1,54 @@
-/* --- General page layout --- */
-body, html {
+/* --- Reset and structure --- */
+body {
   margin: 0;
   padding: 0;
-  font-family: system-ui, sans-serif;
-  background-color: #fff;
-  color: #111;
+  font-family: "Inter", sans-serif;
+  background-color: #fafafa;
+  color: #222;
 }
 
-/* --- Header --- */
+/* Make sure nothing is globally centered */
+.site-main,
+.page-content,
+.wrapper,
+main {
+  max-width: 900px;
+  margin: 0 auto; /* keeps it responsive */
+  text-align: left; /* ensures text aligns left */
+  display: block;
+  padding: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Header layout */
 .site-header {
-  position: relative;   /* positioning context for hamburger */
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #ddd;
-  padding: 0;
-  height: 3.5rem;       /* reserve space for hamburger */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
 }
 
-/* Hamburger button flush top-right */
+/* Hamburger button */
 .hamburger {
-  position: absolute;
-  top: 0;
-  right: 0;            /* move to top-right corner */
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: none;
   border: none;
   cursor: pointer;
-  margin: 0;
-  padding: 0.5rem;      /* clickable area */
-  z-index: 20;
 }
 
-/* Drop-down nav aligned to right */
+/* Navigation menu hidden by default on mobile */
 #nav-menu ul {
   display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 3.5rem;   /* below hamburger */
-  right: 0;      /* align with right edge */
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: 0.5rem 1rem;
   list-style: none;
-  z-index: 10;
+  margin: 0;
+  padding: 0;
 }
 
 #nav-menu ul.show {
-  display: flex;
+  display: block;
 }
 
 #nav-menu ul li {
@@ -54,37 +57,31 @@ body, html {
 
 #nav-menu ul li a {
   text-decoration: none;
-  color: #111;
+  color: #222;
   font-weight: 500;
 }
 
-#nav-menu ul li a:hover {
-  color: #007acc;
-}
-
-/* --- Main content --- */
-.site-main {
-  margin: 2rem 2rem;  /* spacing from edges, not centering */
-  max-width: none;    /* let it span full width */
-  text-align: left;
-}
-
-
-
-/* --- Footer --- */
+/* Footer */
 .site-footer {
-  text-align: left;
-  margin: 2rem auto;
-  padding: 1rem 1rem;
-  max-width: 900px;
-  border-top: 1px solid #ddd;
-  color: #555;
+  text-align: center;
+  padding: 2rem 0;
   font-size: 0.9rem;
+  color: #666;
 }
 
-/* --- Responsive adjustments --- */
-@media (max-width: 768px) {
+/* Desktop navigation (always visible) */
+@media (min-width: 768px) {
   #nav-menu ul {
-    width: 150px;  /* adjust as needed */
+    display: flex;
+    gap: 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #nav-menu ul.show {
+    display: flex;
   }
 }
+
