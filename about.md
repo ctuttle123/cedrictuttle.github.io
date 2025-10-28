@@ -31,7 +31,9 @@ permalink: /about/
     <div class="about-avatar">
       <img src="/assets/images/avatar.png" alt="Cedric Avatar" class="avatar">
     </div>
+
   </div>
 </div>
+
 
 
