@@ -14,18 +14,22 @@ body, html {
   border-bottom: 1px solid #ddd;
   padding: 0 1rem;
   height: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.site-header h1 a {
+.header-container {
+  display: flex;
+  justify-content: space-between; /* h1 left, hamburger right */
+  align-items: center;
+  height: 100%;
+}
+
+.header-container h1 a {
   text-decoration: none;
   color: #111;
   font-size: 1.5rem;
 }
 
-/* Hamburger button top-right */
+/* Hamburger button */
 .hamburger {
   font-size: 2rem;
   background: none;
@@ -35,7 +39,7 @@ body, html {
   z-index: 20;
 }
 
-/* Drop-down nav aligned to right */
+/* Drop-down nav aligned with hamburger */
 #nav-menu ul {
   display: none;
   flex-direction: column;
@@ -72,7 +76,6 @@ body, html {
   margin: 2rem auto;
   max-width: 900px;
   text-align: left;
-  padding: 0 1rem;
 }
 
 /* --- Footer --- */
@@ -93,6 +96,8 @@ body, html {
   justify-content: space-between;
   gap: 3rem;
   padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-page .about-text {
@@ -114,6 +119,7 @@ body, html {
   animation: wave 2.5s ease-in-out infinite;
 }
 
+/* Waving animation */
 @keyframes wave {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(3deg); }
@@ -140,6 +146,7 @@ body, html {
     width: 180px;
   }
 }
+
 
 
 
