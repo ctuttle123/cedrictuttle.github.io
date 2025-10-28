@@ -9,34 +9,35 @@ body, html {
 
 /* --- Header --- */
 .site-header {
-  position: relative;   /* positioning context for hamburger */
+  position: relative; 
   background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
-  padding: 0;
-  height: 3.5rem;       /* reserve space for hamburger */
+  padding: 0.5rem 1rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, hamburger right */
 }
 
-/* Hamburger button flush top-right */
+/* Hamburger button flush top-left */
 .hamburger {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0.5rem;
+  left: 0.5rem;
   font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
-  margin: 0;
-  padding: 0.5rem;      /* clickable area */
   z-index: 20;
 }
 
-/* Drop-down nav aligned to right */
+/* Drop-down nav aligned below hamburger */
 #nav-menu ul {
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 3.5rem;   /* below hamburger */
-  right: 0;      /* align with right edge */
+  top: 3.5rem;   
+  left: 0;      
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   padding: 0.5rem 1rem;
@@ -64,8 +65,8 @@ body, html {
 
 /* --- Main content --- */
 .site-main {
-  margin: 2rem 1rem; /* spacing from left edge */
-  max-width: none;   /* remove centering */
+  margin: 2rem 1rem;
+  max-width: 900px;
   text-align: left;
 }
 
@@ -74,7 +75,7 @@ body, html {
   text-align: left;
   margin: 2rem 1rem;
   padding: 1rem 1rem;
-  max-width: none;
+  max-width: 900px;
   border-top: 1px solid #ddd;
   color: #555;
   font-size: 0.9rem;
@@ -84,10 +85,7 @@ body, html {
 .about-page .about-container {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start; /* flush left */
   gap: 3rem;
-  padding: 2rem 1rem;
-  max-width: none;
 }
 
 .about-page .about-text {
@@ -97,7 +95,7 @@ body, html {
 .about-page .about-avatar {
   flex: 1;
   display: flex;
-  justify-content: flex-start; /* keeps avatar to the right of text */
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -108,7 +106,6 @@ body, html {
   animation: wave 2.5s ease-in-out infinite;
 }
 
-/* Waving animation */
 @keyframes wave {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(3deg); }
@@ -118,13 +115,12 @@ body, html {
 /* --- Responsive adjustments --- */
 @media (max-width: 768px) {
   #nav-menu ul {
-    width: 150px;  /* adjust as needed */
+    width: 150px;
   }
 
   .about-page .about-container {
     flex-direction: column;
     align-items: flex-start;
-    text-align: left;
   }
 
   .about-page .about-avatar {
@@ -135,6 +131,7 @@ body, html {
     width: 180px;
   }
 }
+
 
 
 
