@@ -64,11 +64,11 @@ body, html {
 
 /* --- Main content --- */
 .site-main {
-  margin: 2rem auto;
-  padding: 0 3rem;
-  max-width: 1100px;
+  margin: 2rem 2rem;  /* spacing from edges, not centering */
+  max-width: none;    /* let it span full width */
   text-align: left;
 }
+
 
 
 /* --- Footer --- */
