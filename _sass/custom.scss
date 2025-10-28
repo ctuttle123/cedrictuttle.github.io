@@ -88,22 +88,24 @@ main {
 /* --- About Page Layout --- */
 .about-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* align tops of text & avatar */
   justify-content: space-between;
-  gap: 2rem;
-  padding: 2rem 0;
+  gap: 3rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto; /* center the whole about section */
 }
 
 .about-text {
-  flex: 1;
-  text-align: left;
+  flex: 2; /* wider column */
+  min-width: 300px;
 }
 
 .about-avatar {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .avatar {
@@ -113,27 +115,27 @@ main {
   animation: wave 2.5s ease-in-out infinite;
 }
 
-/* Optional waving animation */
+/* Simple wave animation */
 @keyframes wave {
-  0% { transform: rotate(0deg); }
+  0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(3deg); }
-  50% { transform: rotate(0deg); }
   75% { transform: rotate(-3deg); }
-  100% { transform: rotate(0deg); }
 }
 
-/* --- Mobile layout --- */
+/* --- Mobile Layout --- */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .about-avatar {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   .avatar {
     width: 180px;
   }
 }
+
