@@ -7,7 +7,7 @@ body, html {
   color: #111;
 }
 
-/* --- Header --- */
+/* Hamburger button */
 .site-header {
   display: flex;
   justify-content: space-between; /* logo left, hamburger right */
@@ -15,8 +15,8 @@ body, html {
   background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
   padding: 0.5rem 1rem;
-  position: relative;
   height: 3.5rem;
+  position: relative; /* keep for dropdown nav */
 }
 
 .site-header h1 a {
@@ -24,28 +24,29 @@ body, html {
   color: #111;
 }
 
-/* Hamburger button */
 .hamburger {
   font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
   z-index: 20;
+  /* REMOVE position:absolute, top, right */
 }
 
-/* Drop-down nav */
+/* Drop-down nav aligned to right */
 #nav-menu ul {
   display: none;
   flex-direction: column;
   position: absolute;
   top: 3.5rem;  /* below header */
-  right: 0;     /* flush right with hamburger */
+  right: 0;     /* flush right */
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   padding: 0.5rem 1rem;
   list-style: none;
   z-index: 10;
 }
+
 
 #nav-menu ul.show {
   display: flex;
