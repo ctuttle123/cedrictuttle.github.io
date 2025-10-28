@@ -13,14 +13,12 @@ permalink: /about/
       <li>I love to play sports: Tennis, Golf, Soccer, Basketball</li>
       <li>I love finding applications for data analysis in sports</li>
     </ul>
-
     <h2>Education</h2>
     <ul>
       <li>Senior at Carnegie Mellon University, majoring in Economics & Data Science</li>
       <li>Business Intelligence Analyst at Amica Insurance</li>
       <li>Interested in data-driven business solutions, predictive modeling, and visualization</li>
     </ul>
-
     <h2>Skills</h2>
     <ul>
       <li>Python, R, SQL, Excel, Strategy</li>
