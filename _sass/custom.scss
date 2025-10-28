@@ -85,3 +85,55 @@ main {
   }
 }
 
+/* --- About Page Layout --- */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-avatar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  animation: wave 2.5s ease-in-out infinite;
+}
+
+/* Optional waving animation */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* --- Mobile layout --- */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-avatar {
+    margin-top: 1rem;
+  }
+
+  .avatar {
+    width: 180px;
+  }
+}
