@@ -29,7 +29,7 @@ permalink: /about/
     </div>
     <!-- Right column: avatar -->
     <div class="about-avatar">
-      <img src="/assets/images/avatar.png" alt="Cedric Avatar" class="avatar">
+      <img src="/workbitmoji.png" alt="Cedric Avatar" class="avatar">
     </div>
 
   </div>
