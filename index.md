@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-permalink: /home/
+permalink: /
 ---
 
 # Hi, I'm Cedric Tuttle
