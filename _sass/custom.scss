@@ -1,28 +1,25 @@
-/* --- General page layout --- */
+/* --- General layout --- */
 body, html {
   margin: 0;
   padding: 0;
   font-family: system-ui, sans-serif;
-  background-color: #fff;
+  background: #fff;
   color: #111;
 }
 
-/* Hamburger button */
+/* --- Header & Hamburger --- */
 .site-header {
   display: flex;
-  justify-content: space-between; /* logo left, hamburger right */
+  justify-content: space-between;
   align-items: center;
-  background-color: #f8f8f8;
+  background: #f8f8f8;
   border-bottom: 1px solid #ddd;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   height: 3.5rem;
-  position: relative; /* keep for dropdown nav */
+  position: relative;
 }
 
-.site-header h1 a {
-  text-decoration: none;
-  color: #111;
-}
+.site-header h1 a { text-decoration: none; color: #111; }
 
 .hamburger {
   font-size: 2rem;
@@ -30,31 +27,28 @@ body, html {
   border: none;
   cursor: pointer;
   z-index: 20;
-  /* REMOVE position:absolute, top, right */
+  margin-left: auto;
 }
 
-/* Drop-down nav aligned to right */
+/* --- Dropdown nav --- */
 #nav-menu ul {
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 3.5rem;  /* below header */
-  right: 0;     /* flush right */
-  background-color: #f8f8f8;
+  top: 3.5rem;
+  right: 0;
+  background: #f8f8f8;
   border: 1px solid #ddd;
+  border-top: none;
   padding: 0.5rem 1rem;
   list-style: none;
   z-index: 10;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
+#nav-menu ul.show { display: flex; }
 
-#nav-menu ul.show {
-  display: flex;
-}
-
-#nav-menu ul li {
-  margin: 0.5rem 0;
-}
+#nav-menu ul li { margin: 0.5rem 0; }
 
 #nav-menu ul li a {
   text-decoration: none;
@@ -62,123 +56,53 @@ body, html {
   font-weight: 500;
 }
 
-#nav-menu ul li a:hover {
-  color: #007acc;
-}
+#nav-menu ul li a:hover { color: #007acc; }
 
-/* --- Main content --- */
-.site-main {
+/* --- Main content & footer --- */
+.site-main, .site-footer {
   margin: 2rem 1rem;
   max-width: 900px;
   text-align: left;
 }
 
-/* --- Footer --- */
 .site-footer {
-  text-align: left;
-  margin: 2rem 1rem;
-  padding: 1rem 1rem;
-  max-width: 900px;
+  padding: 1rem;
   border-top: 1px solid #ddd;
   color: #555;
   font-size: 0.9rem;
 }
 
-/* --- About Me Page Layout --- */
+/* --- About page --- */
 .about-page .about-container {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
   gap: 3rem;
   padding: 2rem 1rem;
   max-width: 1200px;
 }
 
-.about-page .about-text {
-  flex: 2;
-}
+.about-page .about-text { flex: 2; }
 
 .about-page .about-avatar {
   flex: 1;
   display: flex;
-  justify-content: flex-start; /* avatar on right */
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
 .about-page .avatar {
   width: 250px;
-  height: auto;
   border-radius: 50%;
   animation: wave 2.5s ease-in-out infinite;
 }
 
 /* Waving animation */
-@keyframes wave {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(3deg); }
-  75% { transform: rotate(-3deg); }
-}
+@keyframes wave { 0%,100%{transform:rotate(0deg);}25%{transform:rotate(3deg);}75%{transform:rotate(-3deg);} }
 
-/* --- Responsive adjustments --- */
+/* --- Responsive --- */
 @media (max-width: 768px) {
-  #nav-menu ul {
-    width: 150px;
-  }
-
-  .about-page .about-container {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .about-page .about-avatar {
-    margin-top: 1.5rem;
-  }
-
-  .about-page .avatar {
-    width: 180px;
-  }
-}
-
-/* --- Force header alignment cleanly --- */
-.site-header {
-  display: flex;
-  justify-content: space-between; /* Title left, hamburger right */
-  align-items: center;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #ddd;
-  padding: 0.5rem 1.5rem;
-  height: 3.5rem;
-  position: relative;
-}
-
-/* Ensure hamburger sits flush right */
-.hamburger {
-  margin-left: auto;
-  margin-right: 0;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 20;
-}
-
-/* Dropdown styling and placement */
-#nav-menu ul {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 3.5rem;  /* below header */
-  right: 0;     /* flush right */
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-top: none;
-  padding: 0.5rem 1rem;
-  list-style: none;
-  z-index: 10;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* subtle polish */
-}
-
-#nav-menu ul.show {
-  display: flex;
+  #nav-menu ul { width: 150px; }
+  .about-page .about-container { flex-direction: column; text-align: left; }
+  .about-page .about-avatar { margin-top: 1.5rem; }
+  .about-page .avatar { width: 180px; }
 }
