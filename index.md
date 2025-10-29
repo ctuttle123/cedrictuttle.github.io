@@ -14,5 +14,6 @@ I love learning about new platforms and tools that can enhance my productivity a
 I enjoy connecting with people over shared interests and learning from experts in deifferent fields.
 
 Explore my work:
-- [**Projects**](projects) – Data science, analytics, and visualization work.
-- [**About**](about) – My background, skills, and interests.
+- [**Projects**]({{ '/projects/' | relative_url }}) – Data science, analytics, and visualization work.
+- [**About**]({{ '/about/' | relative_url }}) – My background, skills, and interests.
+
