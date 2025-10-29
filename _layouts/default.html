@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
+  <title>About Me - Cedric Tuttle</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
@@ -23,7 +23,21 @@
 
   <!-- Main content -->
   <main class="site-main">
-    {{ content }}
+    <div class="about-page">
+      <div class="about-container">
+        <!-- Text Section -->
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hi, I'm Cedric! I'm an Economics & Data Science student at Carnegie Mellon University. I love building data-driven projects, analyzing trends, and creating engaging web content. This portfolio showcases my projects and interests.</p>
+          <p>When I'm not coding, I enjoy tennis, music, and exploring new technologies.</p>
+        </div>
+
+        <!-- Bitmoji Avatar -->
+        <div class="about-avatar">
+          <img src="/assets/images/my-bitmoji.png" alt="Cedric Avatar" class="avatar">
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -42,4 +56,5 @@
   </script>
 </body>
 </html>
+
 
