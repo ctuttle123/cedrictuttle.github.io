@@ -139,3 +139,46 @@ body, html {
     width: 180px;
   }
 }
+
+/* --- Force header alignment cleanly --- */
+.site-header {
+  display: flex;
+  justify-content: space-between; /* Title left, hamburger right */
+  align-items: center;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1.5rem;
+  height: 3.5rem;
+  position: relative;
+}
+
+/* Ensure hamburger sits flush right */
+.hamburger {
+  margin-left: auto;
+  margin-right: 0;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* Dropdown styling and placement */
+#nav-menu ul {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 3.5rem;  /* below header */
+  right: 0;     /* flush right */
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* subtle polish */
+}
+
+#nav-menu ul.show {
+  display: flex;
+}
