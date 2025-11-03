@@ -16,4 +16,4 @@ I enjoy connecting with people over shared interests and learning from experts i
 Explore my work:
 - [**Projects**]({{ '/projects/' | relative_url }}) – Data science, analytics, and visualization work.
 - [**About**]({{ '/about/' | relative_url }}) – My background, skills, and interests.
-
+- [**LinkedIn**](https://www.linkedin.com/in/cedric-tuttle-876640158/) – Connect with me professionally.
