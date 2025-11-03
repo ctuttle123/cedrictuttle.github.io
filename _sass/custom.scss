@@ -95,12 +95,7 @@ body, html {
   max-height: 600px; /* adjust this if it’s too tall or short */
   width: auto;
   border-radius: 0; /* remove circle crop if you want full body visible */
-  animation: wave 2.5s ease-in-out infinite;
 }
-
-
-/* Waving animation */
-@keyframes wave { 0%,100%{transform:rotate(0deg);}25%{transform:rotate(3deg);}75%{transform:rotate(-3deg);} }
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
