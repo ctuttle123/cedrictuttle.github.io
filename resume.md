@@ -9,7 +9,7 @@ permalink: /resume/
 <!-- Header Card -->
 <div class="card">
   <h2>Cedric Tuttle</h2>
-  <p>2019 Wightman St, Pittsburgh | (502) 936-9771 | cedricjtuttle@gmail.com | <a href="#">LinkedIn</a></p>
+  <p>2019 Wightman St, Pittsburgh | (502) 936-9771 | cedricjtuttle@gmail.com 
 </div>
 
 <!-- Education Card -->
