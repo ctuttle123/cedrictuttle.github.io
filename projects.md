@@ -10,7 +10,7 @@ permalink: /projects/
 
 <!-- Project 1 -->
 <div style="width: 200px; text-align: center;">
-  <a href="/projects/project1/">
+  <a href="/projects/churn/">
     <img src="/assets/images/project1-icon.png" alt="Project 1" style="width:100%; border-radius: 10px;">
     <h3>Customer Churn Prediction</h3>
   </a>
