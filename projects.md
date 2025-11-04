@@ -20,7 +20,7 @@ permalink: /projects/
 <div style="width: 200px; text-align: center;">
   <a href="/projects/nfl/">
     <img src="/assets/images/project2-icon.png" alt="Project 2" style="width:100%; border-radius: 10px;">
-    <h3>NBA Big Man Analysis</h3>
+    <h3>NFL Coach and GM hirings</h3>
   </a>
 </div>
 
