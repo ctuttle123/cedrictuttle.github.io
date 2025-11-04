@@ -1,7 +1,7 @@
 ---
 layout: default
 title: NFL Scraper
-permalink: /projects/nfl-scraper/
+permalink: /projects/nfl/
 ---
 
 <h1>NFL Coaching & GM Interviews Scraper</h1>
