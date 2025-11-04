@@ -12,7 +12,7 @@ permalink: /projects/
 <div style="width: 200px; text-align: center;">
   <a href="/projects/churn/">
     <img src="/projects/claims.jpg" alt="Project 1" style="width:100%; border-radius: 10px;">
-    <h3>Predicting Insurance Claim Likelihood</h3>
+    <h3>Predicting Insurance Claim</h3>
   </a>
 </div>
 
