@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Customer Churn Prediction"
-permalink: /projects/project1/
+permalink: /projects/churn/
 nav_exclude: true   # hides it from top navigation
 ---
 
