@@ -27,8 +27,8 @@ permalink: /projects/
 <!-- Project 3 -->
 <div style="width: 200px; text-align: center;">
   <a href="/projects/project3/">
-    <img src="/assets/images/project3-icon.png" alt="Project 3" style="width:100%; border-radius: 10px;">
-    <h3>Spotify Trends</h3>
+    <img src="/projects/F1.jpg" alt="Project 3" style="width:100%; border-radius: 10px;">
+    <h3>F1 Pit stop strategy</h3>
   </a>
 </div>
 
