@@ -180,7 +180,6 @@ a:hover {
 .project-image {
   width: 200px; /* or whatever size you want */
   height: 120px; /* match aspect ratio of other images */
-  object-fit: cover; /* keeps image filling the box without distortion */
-  border-radius: 8px; /* optional, matches your rounded corners */
+  border-radius: 10px; /* optional, matches your rounded corners */
 }
 
