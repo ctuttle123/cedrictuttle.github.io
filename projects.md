@@ -10,7 +10,7 @@ permalink: /projects/
 
 <!-- Project 1 -->
 <div style="width: 200px; text-align: center;">
-  <a href="https://github.com/ctuttle123/ctuttle123.github.io/blob/main/projects/claim_prediction.ipynb">
+  <a href="/claims-prediction/" class="project-link">View the Claims Prediction Project →</a>
     <img src="/projects/claims.jpg" alt="Project 1" class="project-image">
     <h3>Predicting Insurance Claim</h3>
   </a>
