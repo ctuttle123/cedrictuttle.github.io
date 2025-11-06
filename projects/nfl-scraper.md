@@ -12,7 +12,7 @@ This project scrapes NFL websites to extract coaching and GM interview data for 
 
 ## Python Script
 
-```python```
+````python````
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
