@@ -26,7 +26,7 @@ permalink: /projects/
 
 <!-- Project 3 -->
 <div style="width: 200px; text-align: center;">
-  <a href="/projects/project3/">
+  <a href="/projects/my-qmd-project.html">
     <img src="/projects/F1.jpg" alt="Project 3" class="project-image">
     <h3>F1 Pit stop strategy</h3>
   </a>
