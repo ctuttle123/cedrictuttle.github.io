@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "NFL Coaching Data Scraper"
-permalink: /projects/nfl-scraper/
+permalink: /projects/nfl/
 ---
 
 # NFL Coaching Data Scraper (2025)
