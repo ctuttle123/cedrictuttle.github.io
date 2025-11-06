@@ -16,7 +16,7 @@ This project scrapes NFL websites to extract coaching and GM interview data for 
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-```
+
 # URL of the NFL coaching and GM tracker for the 2025 hiring cycle
 url = "https://www.nfl.com/news/nfl-coaching-gm-tracker-latest-news-interviews-developments-in-2025-hiring-cycle"
 
@@ -64,3 +64,4 @@ else:
     print("No data extracted, nothing to save.")
     output_file = 'nfl_coaching_interviews_2025.xlsx'
     df.to_excel(output_file, index=False)
+```
