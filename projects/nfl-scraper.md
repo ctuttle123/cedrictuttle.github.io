@@ -12,11 +12,11 @@ This project scrapes NFL websites to extract coaching and GM interview data for 
 
 ## Python Script
 
-````python````
+```python
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-
+```
 # URL of the NFL coaching and GM tracker for the 2025 hiring cycle
 url = "https://www.nfl.com/news/nfl-coaching-gm-tracker-latest-news-interviews-developments-in-2025-hiring-cycle"
 
