@@ -10,7 +10,7 @@ permalink: /projects/
 
 <!-- Project 1 -->
 <div style="width: 200px; text-align: center;">
-  <a href="/claims-prediction/" class="project-link">View the Claims Prediction Project →</a>
+  <a href="/claims-prediction/" class="project-link"></a>
     <img src="/projects/claims.jpg" alt="Project 1" class="project-image">
     <h3>Predicting Insurance Claim</h3>
   </a>
