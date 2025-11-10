@@ -42,7 +42,7 @@ permalink: /projects/
 
 <!-- Project 5 -->
 <div style="width: 200px; text-align: center;">
-  <a href="/projects/investment/">
+  <a href="/projects/investment_strategy.html">
     <img src="/projects/investment.jpg" alt="Project 5" class="project-image">
     <h3>Investment Strategy Evaluation</h3>
   </a>
