@@ -39,6 +39,29 @@ body, html {
   margin-left: auto;
 }
 
+/* --- Menu label + hamburger wrapper --- */
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-label {
+  color: #f5f5f5;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.menu-toggle .hamburger {
+  font-size: 1.8rem;
+  margin-left: 0; /* remove extra spacing */
+}
+
+.menu-toggle {
+  user-select: none;
+}
+
 /* --- Dropdown nav --- */
 #nav-menu ul {
   display: none;
@@ -182,4 +205,5 @@ a:hover {
   height: 120px; /* match aspect ratio of other images */
   border-radius: 10px; /* optional, matches your rounded corners */
 }
+
 
