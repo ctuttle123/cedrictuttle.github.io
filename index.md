@@ -11,7 +11,7 @@ permalink: /
 
 I’m passionate about using data to drive strategic decisions, build predictive models, and uncover insights that support innovation and initiative.
 I love learning about new platforms and tools that can enhance my productivity while also improving efficieny.
-I enjoy connecting with people over shared interests and learning from experts in deifferent fields.
+I enjoy connecting with people over shared interests and learning from experts in different fields.
 
 Explore my work:
 - [**Projects**]({{ '/projects/' | relative_url }}) – Data science, analytics, and visualization work.
