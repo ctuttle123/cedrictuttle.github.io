@@ -8,23 +8,23 @@
 <body>
   <!-- Header -->
   <header class="site-header">
-    <h1><a href="{{ '/' | relative_url }}">Cedric Tuttle</a></h1>
+  <h1><a href="{{ '/' | relative_url }}">Cedric Tuttle</a></h1>
 
-    <!-- Menu label + hamburger -->
-    <div class="menu-toggle">
-      <span class="menu-label">Menu</span>
-      <button class="hamburger" id="hamburger-btn">☰</button>
-    </div>
+  <!-- Menu button with label -->
+  <button class="menu-toggle" id="hamburger-btn">
+    <span class="menu-label">Menu</span>
+    <span class="hamburger-icon">☰</span>
+  </button>
 
-    <nav id="nav-menu">
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About Me</a></li>
-        <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-        <li><a href="{{ '/resume/' | relative_url }}">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/about/' | relative_url }}">About Me</a></li>
+      <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+      <li><a href="{{ '/resume/' | relative_url }}">Resume</a></li>
+    </ul>
+  </nav>
+</header>
 
   <!-- Main content -->
   <main class="site-main">
@@ -37,12 +37,14 @@
   </footer>
 
   <!-- Hamburger toggle script -->
-  <script>
-    const hamburger = document.getElementById("hamburger-btn");
-    const menu = document.querySelector("#nav-menu ul");
-    hamburger.addEventListener("click", () => {
-      menu.classList.toggle("show");
-    });
-  </script>
+ <script>
+  const hamburger = document.getElementById("hamburger-btn");
+  const menu = document.querySelector("#nav-menu ul");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+</script>
+
 </body>
 </html>
