@@ -45,49 +45,28 @@ body, html {
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-  margin-left: auto; /* pushes it to right corner */
-  
-  /* Reset default button styles */
-  background: #1b1b1b;  /* dark background */
-  color: #f5f5f5;       /* white text */
-  border: none;
-  padding: 0.3rem 0.7rem;
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 1rem;
-  outline: none;
+  margin-left: auto; /* pushes it to the right corner */
 
-  /* Smooth hover transition */
-  transition: background 0.2s, color 0.2s;
+  /* Basic styling for dark theme */
+  background: none;
+  border: none;
+  color: #f5f5f5; /* white text */
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0;
+  outline: none;
   user-select: none;
 }
 
-/* Hamburger inside menu */
 .menu-toggle .hamburger {
   font-size: 1.8rem;
-  color: inherit; /* matches menu label */
+  color: inherit; /* matches Menu text */
   margin-left: 0;
 }
 
-/* Menu text */
 .menu-label {
-  color: inherit; /* inherits white text from wrapper */
+  color: inherit; /* white text */
 }
-
-/* Hover effect */
-.menu-toggle:hover {
-  background: #4da6ff; /* blue hover background */
-  color: #fff;          /* text stays white */
-}
-
-/* Focus / Active (fix white flash issue) */
-.menu-toggle:focus,
-.menu-toggle:active {
-  background: #1b1b1b;  /* dark background */
-  color: #f5f5f5;       /* text stays white */
-}
-
-
 
 /* --- Dropdown nav --- */
 #nav-menu ul {
