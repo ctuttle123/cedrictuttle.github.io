@@ -39,30 +39,50 @@ body, html {
   margin-left: auto;
 }
 
-/* --- Menu label + hamburger wrapper --- */
+//* --- Menu label + hamburger wrapper --- */
 .menu-toggle {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-  margin-left: auto; /* pushes it to the right corner */
-}
-
-.menu-label {
+  margin-left: auto; /* keeps it in right corner */
+  background: #2a2a2a;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
   color: #f5f5f5;
   font-weight: 500;
   font-size: 1rem;
+  border: none;
+  user-select: none;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
 }
 
+/* Keep the text color consistent */
+.menu-label {
+  color: inherit;
+}
+
+/* Hamburger inside menu */
 .menu-toggle .hamburger {
   font-size: 1.8rem;
-  margin-left: 0; /* remove extra spacing */
+  margin-left: 0;
+  color: inherit;
 }
 
-
-.menu-toggle {
-  user-select: none;
+/* Hover effect */
+.menu-toggle:hover {
+  background: #4da6ff;
+  color: #fff;
 }
+
+/* Focus / Active states to prevent all-white issue */
+.menu-toggle:focus,
+.menu-toggle:active {
+  background: #2a2a2a;
+  color: #f5f5f5;
+}
+
 
 /* --- Dropdown nav --- */
 #nav-menu ul {
