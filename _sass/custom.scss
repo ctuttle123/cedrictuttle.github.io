@@ -33,28 +33,29 @@ body, html {
 .menu-toggle {
   display: flex;
   align-items: center;
-  gap: 0.5rem;        /* space between Menu and icon */
+  gap: 0.5rem;                        /* space between Menu and icon */
   cursor: pointer;
-  background: none;    /* remove default button background */
-  border: none;        /* remove default button border */
-  color: #f5f5f5;     /* white text and icon */
-  font-size: 1rem;     
-  margin-left: auto;   /* push to right corner */
-  z-index: 20;         /* stay above nav */
-  padding: 0;          /* remove extra spacing */
-}
-
-.menu-toggle .hamburger-icon {
-  font-size: 1.8rem;   /* match previous hamburger size */
-  line-height: 1;
+  background-color: transparent !important; /* ensure no background */
+  border: none !important;                  /* remove default button border */
+  color: #f5f5f5;                      /* white text and icon */
+  font-size: 1rem;
+  margin-left: auto;                     /* push to right corner */
+  z-index: 20;                           /* stay above nav */
+  padding: 0;                            /* remove extra spacing */
+  line-height: 1;                        /* vertical align */
 }
 
 .menu-toggle:focus {
-  outline: none;       /* remove default focus outline */
+  outline: none;                         /* remove default focus outline */
 }
 
 .menu-label {
-  color: inherit; /* white text */
+  color: inherit;                        /* white text */
+}
+
+.menu-toggle .hamburger-icon {
+  font-size: 1.8rem;                     /* match previous hamburger size */
+  line-height: 1;
 }
 
 /* --- Dropdown nav --- */
@@ -200,5 +201,6 @@ a:hover {
   height: 120px; /* match aspect ratio of other images */
   border-radius: 10px; /* optional, matches your rounded corners */
 }
+
 
 
