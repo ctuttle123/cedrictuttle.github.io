@@ -39,49 +39,54 @@ body, html {
   margin-left: auto;
 }
 
-//* --- Menu label + hamburger wrapper --- */
+/* --- Menu label + hamburger wrapper --- */
 .menu-toggle {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-  margin-left: auto; /* keeps it in right corner */
-  background: #2a2a2a;
+  margin-left: auto; /* pushes it to right corner */
+  
+  /* Reset default button styles */
+  background: #1b1b1b;  /* dark background */
+  color: #f5f5f5;       /* white text */
+  border: none;
   padding: 0.3rem 0.7rem;
   border-radius: 5px;
-  color: #f5f5f5;
   font-weight: 500;
   font-size: 1rem;
-  border: none;
-  user-select: none;
-  transition: background 0.2s, color 0.2s;
   outline: none;
-}
 
-/* Keep the text color consistent */
-.menu-label {
-  color: inherit;
+  /* Smooth hover transition */
+  transition: background 0.2s, color 0.2s;
+  user-select: none;
 }
 
 /* Hamburger inside menu */
 .menu-toggle .hamburger {
   font-size: 1.8rem;
+  color: inherit; /* matches menu label */
   margin-left: 0;
-  color: inherit;
+}
+
+/* Menu text */
+.menu-label {
+  color: inherit; /* inherits white text from wrapper */
 }
 
 /* Hover effect */
 .menu-toggle:hover {
-  background: #4da6ff;
-  color: #fff;
+  background: #4da6ff; /* blue hover background */
+  color: #fff;          /* text stays white */
 }
 
-/* Focus / Active states to prevent all-white issue */
+/* Focus / Active (fix white flash issue) */
 .menu-toggle:focus,
 .menu-toggle:active {
-  background: #2a2a2a;
-  color: #f5f5f5;
+  background: #1b1b1b;  /* dark background */
+  color: #f5f5f5;       /* text stays white */
 }
+
 
 
 /* --- Dropdown nav --- */
