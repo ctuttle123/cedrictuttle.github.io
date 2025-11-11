@@ -34,17 +34,17 @@ permalink: /projects/
 
 <!-- Project 4 -->
 <div style="width: 200px; text-align: center;">
-  <a href="/projects/F1/">
-    <img src="/projects/F1.jpg" alt="Project 4" class="project-image">
-    <h3>F1 Pit stop strategy</h3>
+  <a href="/projects/investment_strategy.html">
+    <img src="/projects/investment.jpg" alt="Project 5" class="project-image">
+    <h3>Investment Strategy Evaluation</h3>
   </a>
 </div>
 
 <!-- Project 5 -->
 <div style="width: 200px; text-align: center;">
-  <a href="/projects/investment_strategy.html">
-    <img src="/projects/investment.jpg" alt="Project 5" class="project-image">
-    <h3>Investment Strategy Evaluation</h3>
+  <a href="/projects/F1/">
+    <img src="/projects/F1.jpg" alt="Project 4" class="project-image">
+    <h3>F1 Pit stop strategy (Work in Progress)</h3>
   </a>
 </div>
 
