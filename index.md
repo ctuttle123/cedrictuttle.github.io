@@ -10,7 +10,7 @@ permalink: /
 📊 Currently a **Business Insights Analyst at Amica Insurance**  
 
 I’m passionate about using data to drive strategic decisions, build predictive models, and uncover insights that support innovation and initiative.
-I love learning about new platforms and tools that can enhance my productivity and output while also improving efficieny.
+I love learning about new platforms and tools that can enhance my productivity while also improving efficieny.
 I enjoy connecting with people over shared interests and learning from experts in deifferent fields.
 
 Explore my work:
