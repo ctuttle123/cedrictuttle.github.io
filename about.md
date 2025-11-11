@@ -13,7 +13,7 @@ permalink: /about/
         <li>Franco-American; lived my entire life in France and went to an international school</li>
         <li>I love to play sports: Tennis, Golf, Soccer, Basketball</li>
         <li>I like finding applications for data analysis in my day to day life</li>
-        <li>I enjoy discovering new passions from people like most recently climbing!</li>
+        <li>I enjoy discovering new passions from people, most recently climbing!</li>
         <li>I am also very food driven! I love cooking and eating new meals with varying flavors and from all over the world.</li>
       </ul>
       <h2>Education</h2>
